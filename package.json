@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/S-STALWART-S/import-export-manager#readme",
   "dependencies": {
-    "@s_stalwart_s/import-export-manager": "^1.0.1",
     "react": "^17.0.2"
   },
   "devDependencies": {}
