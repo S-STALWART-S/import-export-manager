@@ -1,0 +1,27 @@
+{
+  "name": "import-export-manager",
+  "version": "1.0.0",
+  "description": "Goodbye to import and export! You can manage everything about imports and exports with it.",
+  "main": "import-export-manager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S-STALWART-S/import-export-manager.git"
+  },
+  "keywords": [
+    "import",
+    "export",
+    "manager"
+  ],
+  "author": "S_STALWART_S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S-STALWART-S/import-export-manager/issues"
+  },
+  "homepage": "https://github.com/S-STALWART-S/import-export-manager#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
