@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@s_stalwart_s/import-export-manager@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@s_stalwart_s/import-export-manager/-/import-export-manager-1.0.1.tgz#52b67caaddcc16966161f5a4704a14479b283771"
+  integrity sha512-f4T6mGnChhj7hsmVCreyBPh7wUAjf19xJxcoZAyaJtDB15aj5XH5DmmlA9MRVqmDtMkVLh7XOJiAe0D0ERTBYg==
+  dependencies:
+    react "^17.0.2"
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
