@@ -1,5 +1,7 @@
 const { lazy } = require("react");
 
+//* Super stuff =>
+
 const imports = {};
 
 //* Local stuff =>
@@ -54,4 +56,4 @@ const exporter = (path, value) => {
   return () => console.log("I DON'T RETURN ANYTHING!");
 };
 
-module.exports = { exporter, lazyExporter };
+module.exports = { exporter, lazyExporter, imports };
