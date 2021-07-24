@@ -1,7 +1,3 @@
-let lazy = null;
-
-const lazyThief = (lazyFromApp) => (lazy = lazyFromApp);
-
 //* Super stuff =>
 
 const imports = {};
@@ -34,19 +30,19 @@ const assigner = (imports, path, value) => {
 
 //* Global stuff =>
 
-/**
- * @param {string} path - Object path to save value
- * @param {string} componentName - Object key to access this component
- * @param {string} fileSRC - File address using __filename
- * @return {undefined} undefined
- */
-const lazyExporter = (path, componentName, fileSRC) => {
-  path = pathSplitter(path);
-  fileSRC = fileSRC.split("/src")[1];
-  assigner(imports, path, {
-    [componentName]: () => lazy(() => import(fileSRC)),
-  });
-};
+// /**
+//  * @param {string} path - Object path to save value
+//  * @param {string} componentName - Object key to access this component
+//  * @param {string} fileSRC - File address using __filename
+//  * @return {undefined} undefined
+//  */
+// const lazyExporter = (path, componentName, fileSRC) => {
+//   path = pathSplitter(path);
+//   fileSRC = fileSRC.split("/src")[1];
+//   assigner(imports, path, {
+//     [componentName]: () => lazy(() => import(fileSRC)),
+//   });
+// };
 
 /**
  * @param {string} path - Object path to save value
@@ -58,4 +54,4 @@ const exporter = (path, value) => {
   return () => console.log("I DON'T RETURN ANYTHING!");
 };
 
-module.exports = { exporter, lazyExporter, lazyThief, imports };
+module.exports = { exporter, imports };
