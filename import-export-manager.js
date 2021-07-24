@@ -5,25 +5,25 @@ const imports = {};
 //* Local stuff =>
 
 const pathSplitter = (path) => {
-  if (!Array.isArray(path)) path = path.split(".");
-  return path;
+  if (!Array.isArray(path)) var newPath = path.split(".");
+  return newPath;
 };
 
 const assigner = (imports, path, value) => {
-  path = pathSplitter(path);
+  const newPath = pathSplitter(path);
 
-  lastKeyIndex = path.length - 1;
+  const lastKeyIndex = newPath.length - 1;
 
   for (var i = 0; i < lastKeyIndex; ++i) {
-    key = path[i];
+    const key = newPath[i];
     if (!(key in imports)) {
       imports[key] = {};
     }
     imports = imports[key];
   }
 
-  imports[path[lastKeyIndex]] = {
-    ...imports[path[lastKeyIndex]],
+  imports[newPath[lastKeyIndex]] = {
+    ...imports[newPath[lastKeyIndex]],
     ...value,
   };
 };
