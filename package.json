@@ -1,6 +1,6 @@
 {
   "name": "@s_stalwart_s/import-export-manager",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Goodbye to import and export! You can manage everything about imports and exports with it.",
   "main": "import-export-manager.js",
   "scripts": {
