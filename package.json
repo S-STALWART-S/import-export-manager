@@ -21,8 +21,6 @@
     "url": "https://github.com/S-STALWART-S/import-export-manager/issues"
   },
   "homepage": "https://github.com/S-STALWART-S/import-export-manager#readme",
-  "dependencies": {
-    "react": "^17.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }

@@ -1,4 +1,6 @@
-const { lazy } = require("react");
+let lazy = null;
+
+const lazyThief = (lazyFromApp) => (lazy = lazyFromApp);
 
 //* Super stuff =>
 
@@ -56,4 +58,4 @@ const exporter = (path, value) => {
   return () => console.log("I DON'T RETURN ANYTHING!");
 };
 
-module.exports = { exporter, lazyExporter, imports };
+module.exports = { exporter, lazyExporter, lazyThief, imports };
