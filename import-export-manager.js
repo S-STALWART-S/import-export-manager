@@ -5,8 +5,8 @@ const imports = {};
 //* Local stuff =>
 
 const pathSplitter = (path) => {
-  if (!Array.isArray(path)) var newPath = path.split(".");
-  return newPath;
+  if (!Array.isArray(path)) path = path.split(".");
+  return path;
 };
 
 const assigner = (imports, path, value) => {
@@ -27,22 +27,6 @@ const assigner = (imports, path, value) => {
     ...value,
   };
 };
-
-//* Global stuff =>
-
-// /**
-//  * @param {string} path - Object path to save value
-//  * @param {string} componentName - Object key to access this component
-//  * @param {string} fileSRC - File address using __filename
-//  * @return {undefined} undefined
-//  */
-// const lazyExporter = (path, componentName, fileSRC) => {
-//   path = pathSplitter(path);
-//   fileSRC = fileSRC.split("/src")[1];
-//   assigner(imports, path, {
-//     [componentName]: () => lazy(() => import(fileSRC)),
-//   });
-// };
 
 /**
  * @param {string} path - Object path to save value
